@@ -1,13 +1,13 @@
 {% set name = "rotary-embedding-torch" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0c608f180d27619dd7647276de981959586fccd45cbfd6d2ed2f0174d897c658
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 58c68cad9866f59c42fe18299e312a71d83401c379006df82c238a203c061675
 
 build:
   noarch: python
