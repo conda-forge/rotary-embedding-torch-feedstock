@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@leightonpayne](https://github.com/leightonpayne/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
