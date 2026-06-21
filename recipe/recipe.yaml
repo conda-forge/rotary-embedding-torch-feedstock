@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: rotary-embedding-torch
   version: "0.9.1"
 
 package:
-  name: ${{ name|lower }}
+  name: rotary-embedding-torch
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/rotary-embedding-torch/rotary_embedding_torch-${{ version }}.tar.gz
   sha256: f43c39cd9c0aaa17d47e876db89a552a203dd8af35e7980f484ab7ad7ea8bf69
 
 build:
@@ -21,11 +20,11 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - hatchling
   run:
     - python >=${{ python_min }}
-    - einops >=0.7
-    - pytorch >=2.0
+    - einops >=0.8
+    - pytorch >=2.4
 
 tests:
   - python:
