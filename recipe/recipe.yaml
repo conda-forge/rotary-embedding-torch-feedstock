@@ -31,7 +31,9 @@ tests:
       imports:
         - rotary_embedding_torch
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Rotary Embedding - Pytorch
