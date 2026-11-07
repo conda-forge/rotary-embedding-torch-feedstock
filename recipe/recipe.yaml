@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.1"
+  version: "0.9.2"
 
 package:
   name: rotary-embedding-torch
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rotary-embedding-torch/rotary_embedding_torch-${{ version }}.tar.gz
-  sha256: f43c39cd9c0aaa17d47e876db89a552a203dd8af35e7980f484ab7ad7ea8bf69
+  sha256: 5eb7c8e899af5fb3cfa24f9e5902663183ef77c9e3fa55f478d0de34d183431b
 
 build:
   number: 0
